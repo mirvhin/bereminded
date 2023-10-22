@@ -24,7 +24,7 @@
 [(Back to top)](#table-of-contents)
 
 1. [Download](https://docs.docker.com/engine/install/) and install Docker. 
-2. [Download](https://docs.docker.com/engine/install/) and install Gradle. 
+2. [Download](https://gradle.org/install/) and install Gradle. 
  *Note: Needed temporarily. This will be removed on the next push*
 2. [Update Server conf property](#custom-configurations).  *Note: Needed temporarily. This will be removed on the next push*
 3. Start and run all the docker services by running: `docker-compose up -d`
