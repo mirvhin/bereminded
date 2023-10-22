@@ -1,0 +1,54 @@
+type Query {
+  getUser: User!
+  getAllReminders: [Reminder!]!
+  getReminder(id: String!): Reminder!
+}
+
+type Mutation {
+  login(loginUserInput: LoginUserInput!): User!
+  registerUser(registerUserInput: RegisterUserInput!): User!
+  addReminder(addReminderInput: AddReminderInput!): Reminder!
+  updateReminder(updateReminderInput: UpdateReminderInput!): Reminder!
+}
+
+type User {
+  id: String!
+  name: String!
+  username: String!
+  accessToken: String
+  created: String!
+  updated: String!
+}
+
+type Reminder {
+  id: String!
+  title: String!
+  description: String!
+  isDone: Boolean!
+  created: String!
+  updated: String!
+}
+
+input LoginUserInput {
+  username: String!
+  password: String!
+}
+
+input RegisterUserInput {
+  username: String!
+  password: String!
+  name: String!
+}
+
+input AddReminderInput {
+  title: String!
+  description: String!
+  isDone: Boolean!
+}
+
+input UpdateReminderInput {
+  id: String!
+  title: String!
+  description: String!
+  isDone: Boolean!
+}
